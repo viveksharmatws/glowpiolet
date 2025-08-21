@@ -15,7 +15,7 @@ const FeaturesSection = () => {
   return (
     <div
       style={{
-        backgroundImage: `url('/public/herobg.jpg')`,
+        backgroundImage: `url('/herobg.jpg')`,
       }}
     >
       <OurCustomers />

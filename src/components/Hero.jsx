@@ -8,7 +8,7 @@ const Hero = () => {
     <div
       className="hero-background flex flex-col gap-12 lg:gap-20 mb-16 lg:mb-36"
       style={{
-        backgroundImage: `url('/public/herobg.jpg')`,
+        backgroundImage: `url('/herobg.jpg')`,
       }}
     >
       <Header />

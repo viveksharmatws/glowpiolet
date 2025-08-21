@@ -14,14 +14,14 @@
 }
 
 .hero-background {
-  background-image: url("/images/herobg.jpg");
+  background-image: url("/herobg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .our-features-background {
-  background-image: url("/public/servicesbackground.jpg");
+  background-image: url("/servicesbackground.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
