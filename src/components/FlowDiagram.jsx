@@ -12,7 +12,7 @@ const FlowDiagram = () => {
         fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
         position: "relative",
       }}
-      className="flex flex-row h-full lg:h-52 p-2.5 md:!p-8"
+      className="flex flex-col md:!flex-row h-full lg:h-52 p-2.5 md:!p-8"
     >
       {/* Left Box */}
       <div
@@ -20,14 +20,13 @@ const FlowDiagram = () => {
           border: "1px solid #ddd",
           borderRadius: 12,
           padding: 16,
-          width: 300,
           textAlign: "center",
           background: "white",
           boxShadow: "0 4px 14px rgba(0,0,0,0.1)",
           fontSize: 14,
           userSelect: "none",
-          marginRight: 20,
         }}
+        className="mr-0 md:!mr-5 w-[270px] md:!w-[300px]"
       >
         <div style={{ marginBottom: 10, fontWeight: 600, color: "#333" }}>
           Product Photo/Video
@@ -41,7 +40,6 @@ const FlowDiagram = () => {
 
       <div
         style={{
-          display: "flex",
           alignItems: "center",
           gap: 0,
           color: "#555",
@@ -49,6 +47,7 @@ const FlowDiagram = () => {
           userSelect: "none",
           whiteSpace: "nowrap",
         }}
+        className="flex flex-col md:!flex-row"
       >
         <div
           style={{
@@ -60,21 +59,25 @@ const FlowDiagram = () => {
             marginRight: 14,
           }}
         >
+        <div className="my-4 md:!my-0">
           +/
         </div>
-        <div>
+        </div>
+        <div className="my-4 md:!my-0">
           <img src="/youridea.png" />
         </div>
         <div>
-          <img src="/Line 6.svg" className="w-[60px]" />
+          <img src="/Line 6.svg" className="w-[60px] h-[60px] rotate-90 md:!rotate-0" />
         </div>
-        <div>
+        <div className="w-[205px] md:!w-[49%]">
           <img src="/glowpiolet.png" />
         </div>
-        <div>
-          <img src="/curvedline1.svg" className="w-[67px]" />
-          <img src="/Line 6.svg" className="w-[67px]" />
-          <img src="/curvedline2.svg" className="w-[67px]" />
+        <div  className="
+        rotate-90 md:!rotate-0
+        ">
+          <img src="/curvedline1.svg" className="w-[80px] md:!w-[67px]" />
+          <img src="/Line 6.svg" className="w-[80px] md:!w-[67px]" />
+          <img src="/curvedline2.svg" className="w-[80px] md:!w-[67px]" />
         </div>
       </div>
 
@@ -82,21 +85,21 @@ const FlowDiagram = () => {
 
       <div
         style={{
-          display: "flex",
           alignItems: "center",
           gap: 0,
           userSelect: "none",
         }}
+      className="flex flex-col md:!flex-row"
+
       >
         {/* Right side bubbles */}
         <div
           style={{
             position: "relative",
-            display: "flex",
-            flexDirection: "column",
             gap: 15,
             marginRight: 0,
           }}
+        className="flex flex-row md:!flex-col"
         >
           <div>
             <img src="/scriptbtn.png" />
@@ -108,8 +111,8 @@ const FlowDiagram = () => {
             <img src="/musicbtn.png" />
           </div>
         </div>
-        <div>
-          <img src="/Line 6.svg" className="w-[60px]" />
+        <div className="my-4 mb-0 md:!my-0">
+          <img src="/Line 6.svg" className="w-[60px] h-[60px] rotate-90 md:!rotate-0" />
         </div>
 
         {/* Right Box */}
@@ -118,13 +121,13 @@ const FlowDiagram = () => {
             border: "1px solid #dba1ce",
             borderRadius: 14,
             padding: 16,
-            width: 300,
             textAlign: "center",
             background: "white",
             boxShadow: "0 4px 16px rgba(219,161,206,0.4)",
             fontSize: 14,
             userSelect: "none",
           }}
+          className="w-[270px] md:!w-[300px]"
         >
           <div style={{ marginBottom: 10, fontWeight: 600, color: "#333" }}>
             Winning Beauty Ad

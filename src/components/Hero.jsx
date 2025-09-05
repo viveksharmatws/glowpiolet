@@ -27,7 +27,7 @@ const Hero = () => {
             </span>{" "}
           </h2>
 
-          <p className="max-w-[458px] font-inter text-base sm:!text-xl text-center text-gray-700 mb-8 mx-auto">
+          <p className="max-w-[458px] font-inter text-base sm:!text-xl text-center text-gray-700 mb-0 md:!mb-8 mx-auto">
           The simple magic behind ads that glow – finally revealed.
           </p>
         </div>

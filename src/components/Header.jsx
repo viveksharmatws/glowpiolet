@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "/public/headerlogo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
+
 const navLinks = ["Features", "Pricing", "Become an Affiliate", "Contact us"];
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="flex justify-center w-full pt-4 px-4 main-wrapper">
       <nav
@@ -41,58 +45,57 @@ const Header = () => {
           </span>
         </div>
 
-{/* Nav Links */}
-<div className="gap-3 items-center lg:gap-10 hidden md:!flex">
-  {navLinks.map((link, index) => (
-    <a
-      key={index}
-      href="#"
-      className="
-        relative
-        text-[#333] text-base lg:text-[18px] font-inter 
-        text-center leading-6 
-        transition 
-        hover:text-black
-        after:content-['']
-        after:absolute
-        after:left-0
-        after:-bottom-1
-        after:w-0
-        after:h-[2px]
-        after:bg-black
-        after:transition-all
-        after:duration-300
-        hover:after:w-full
-      "
-    >
-      {link}
-    </a>
-  ))}
-</div>
+        {/* Nav Links (Desktop) */}
+        <div className="gap-3 items-center lg:gap-10 hidden md:!flex">
+          {navLinks.map((link, index) => (
+            <a
+              key={index}
+              href="#"
+              className="
+                relative
+                text-[#333] text-base lg:text-[18px] font-inter 
+                text-center leading-6 
+                transition 
+                hover:text-black
+                after:content-['']
+                after:absolute
+                after:left-0
+                after:-bottom-1
+                after:w-0
+                after:h-[2px]
+                after:bg-black
+                after:transition-all
+                after:duration-300
+                hover:after:w-full
+              "
+            >
+              {link}
+            </a>
+          ))}
+        </div>
 
-
-        {/* Actions */}
+        {/* Actions (Desktop) */}
         <div className="md:!flex items-center gap-3 md:gap-5 hidden">
-<button
-    className="
-      relative
-      text-base md:text-[18px] font-roboto font-medium 
-      leading-[24px] text-[#333] cursor-pointer 
-      transition hover:text-black
-      after:content-['']
-      after:absolute
-      after:left-0
-      after:-bottom-1
-      after:w-0
-      after:h-[2px]
-      after:bg-black
-      after:transition-all
-      after:duration-300
-      hover:after:w-full
-    "
-  >
-    Log in
-  </button>
+          <button
+            className="
+              relative
+              text-base md:text-[18px] font-roboto font-medium 
+              leading-[24px] text-[#333] cursor-pointer 
+              transition hover:text-black
+              after:content-['']
+              after:absolute
+              after:left-0
+              after:-bottom-1
+              after:w-0
+              after:h-[2px]
+              after:bg-black
+              after:transition-all
+              after:duration-300
+              hover:after:w-full
+            "
+          >
+            Log in
+          </button>
           <button
             className="
               text-base lg:text-[18px] font-medium font-inter 
@@ -109,8 +112,56 @@ const Header = () => {
             Sign up
           </button>
         </div>
-          <GiHamburgerMenu size={25} className="md:hidden" />
+
+        {/* Hamburger (Mobile) */}
+        <button
+          className="md:hidden"
+          onClick={() => setIsOpen(true)}
+          aria-label="Open Menu"
+        >
+          <GiHamburgerMenu size={25} />
+        </button>
       </nav>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex justify-end">
+          <div className="w-64 bg-white h-full shadow-lg flex flex-col p-5">
+            {/* Close Button */}
+            <button
+              className="self-end mb-6"
+              onClick={() => setIsOpen(false)}
+              aria-label="Close Menu"
+            >
+              <IoClose size={28} />
+            </button>
+
+            {/* Links */}
+            <div className="flex flex-col gap-5">
+              {navLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href="#"
+                  className="text-lg font-medium text-gray-700 hover:text-black transition"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link}
+                </a>
+              ))}
+            </div>
+
+            {/* Actions */}
+            <div className="mt-8 flex flex-col gap-3">
+              <button className="text-lg font-medium text-gray-700 hover:text-black transition">
+                Log in
+              </button>
+              <button className="text-lg font-medium bg-black text-white rounded-full py-2 px-4">
+                Sign up
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
