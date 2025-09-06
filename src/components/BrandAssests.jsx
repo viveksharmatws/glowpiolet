@@ -115,6 +115,7 @@ const BrandAssets = () => {
           </div>
         </div>
 
+      </div>
         {/* UGC Characters */}
         <div>
           <label className="block text-white text-base sm:text-lg font-inter font-light mb-2">
@@ -124,7 +125,7 @@ const BrandAssets = () => {
             {[1, 2].map((i) => (
               <div
                 key={i}
-                className="bg-[#151515] p-4 rounded-lg flex flex-col sm:flex-row cursor-pointer w-full items-center sm:items-start gap-4"
+                className="bg-[#151515] p-4 rounded-lg flex flex-col sm:flex-row cursor-pointer w-full items-center sm:items-start gap-4 max-w-[330px]"
               >
                 <img
                   src="/ugcframe.png"
@@ -154,7 +155,7 @@ const BrandAssets = () => {
                 </div>
               </div>
             ))}
-            <div className="w-full sm:w-[200px] bg-[#202328] rounded-lg p-6 flex flex-col items-center justify-center border-2 border-[#FFFFFF5C] border-dotted cursor-pointer hover:border-[#8267EC]" onClick={()=> setIsModalOpen(true)}>
+            <div className="w-full sm:w-[200px] bg-[#FFFFFF0A] rounded-lg p-6 flex flex-col items-center justify-center border-2 border-[#FFFFFF1F] border-dotted cursor-pointer hover:border-[#8267EC]" onClick={()=> setIsModalOpen(true)}>
               <img src="/whiteplus.svg" className="w-6 h-6" />
               <span className="text-white text-sm mt-2 text-center">
                 Add a character
@@ -180,7 +181,6 @@ const BrandAssets = () => {
             </button>
           </div>
         </div>
-      </div>
       <section>
         <div className="flex flex-col justify-start items-start mb-4">
           <h2 className="text-[14px] sm:!text-[16px] leading-[16px] tracking-[0.02em] text-start text-white font-normal font-inter align-middle">
