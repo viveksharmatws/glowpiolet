@@ -4,21 +4,24 @@ import DashboardProductSection from "./DashboardProductSection";
 import TemplatesProductSection from "./TemplatesProductSection";
 import ProfileMenu from "./ProfileMenu";
 import HeaderBody from "./HeaderBody";
+import { Link } from "react-router-dom";
 
 const DashboardHeader = () => {
   return (
     <>
-      <header className="bg-black text-white px-6 py-3 flex justify-between items-center">
+      <header className="bg-black text-white px-3 sm:!px-6 py-3 flex justify-between items-center">
+        <Link to="/">
         <div className="flex items-center gap-2 cursor-pointer">
-          <img src={logo} alt="Logo" className="h-9 w-9 lg:h-8 lg:w-8" />
-          <span className="font-roboto text-xl lg:text-[19px] font-semibold leading-none tracking-tight">
+          <img src={logo} alt="Logo" className="h-7 w-7 sm:h-9 sm:w-9 lg:h-8 lg:w-8" />
+          <span className="font-roboto text-lg sm:!text-xl lg:text-[19px] font-semibold leading-none tracking-tight">
             Glowpilot
           </span>
         </div>
+        </Link>
 
-        <div className="flex items-center gap-9">
-          <div className="flex items-center gap-1">
-            <img src="/thunder.svg" alt="Score Icon" className="h-6 w-6" />
+        <div className="flex items-center gap-3 sm:!gap-9">
+          <div className="flex items-center gap-1 cursor-pointer">
+            <img src="/thunder.svg" alt="Score Icon" className="h-4 w-4 sm:!h-6 sm:!w-6" />
             <p className="text-sm lg:text-base font-medium font-inter">3600</p>
           </div>
 

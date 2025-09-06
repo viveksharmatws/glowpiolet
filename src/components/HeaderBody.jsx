@@ -10,10 +10,10 @@ const HeaderBody = () => {
     <>
       <DashboardHeader />
 
-      <div className="flex min-h-screen bg-[#202328] text-white">
+      <div className="flex min-h-screen bg-[#202328] text-white sm:!p-4 lg:!p-7">
         {/* Sidebar (Mobile: overlay, Desktop: fixed) */}
         <aside
-          className={`fixed md:static top-0 left-0 h-full w-64 p-6 border-r border-gray-800 bg-[#060B13] flex flex-col justify-between transform transition-transform duration-300 z-50
+          className={`fixed md:static top-0 left-0 h-full w-64 p-3 lg:!p-6 border-r border-gray-800 bg-[#060B13] rounded-2xl flex flex-col justify-between transform transition-transform duration-300 z-50
           ${sidebarOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}
         >
           {/* Close Button (Mobile only) */}
@@ -34,7 +34,7 @@ const HeaderBody = () => {
               </Link>
             </div>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-2 md:!gap-4">
               <button className="text-left px-2 py-1 hover:bg-gray-800 rounded font-inter font-normal text-lg text-[#FFFFFF66] cursor-pointer">
                 Create
               </button>

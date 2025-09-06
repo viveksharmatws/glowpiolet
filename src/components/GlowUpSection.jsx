@@ -29,7 +29,6 @@ const GlowUpSection = () => {
   <LaunchAdsCard heading="Slash Creative Costs" description="Get unlimited ad variations without the cost of shoots, models, or expensive software." imageSrc="/slashcost.png" />
   <LaunchAdsCard heading="End Creative Burnout" description="Never run out of fresh ideas. Our AI is your endless source of inspiration and ad concepts." imageSrc="/creativeidea.png" />
   <LaunchAdsCard heading="Actually See What Works" description="Stop guessing. A/B test creatives effortlessly and use real data to find your winning ads." imageSrc="/arrowshot.png" />
-
 </div>
 
     </>

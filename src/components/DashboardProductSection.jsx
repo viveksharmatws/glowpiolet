@@ -14,16 +14,15 @@ const DashboardProductSection = () => {
         <h2 className="text-[14px] sm:!text-[16px] leading-[16px] tracking-[0.02em] text-center text-white/70 font-medium font-inter align-middle">
           Start With Your Existing Product
         </h2>
-
         <a
           href="#"
-          className="text-[14px] sm:!text-[16.18px] leading-[21.57px] text-white/90 font-medium font-inter text-center align-middle flex gap-3 items-center"
+          className="text-[14px] sm:!text-[16.18px] leading-[21.57px] text-white/90 font-medium font-inter flex gap-3 items-center border-b-2 border-transparent hover:border-white transition-all duration-200"
         >
           See All Products{" "}
           <img src="/dashboardarrow.svg" alt="arrow" className="h-4 w-4" />
         </a>
       </div>
-      <div className="grid grid-cols-2  sm:!grid-cols-2 lg:!grid-cols-4 gap-3 sm:!gap-6">
+      <div className="grid grid-cols-2  sm:!grid-cols-2  md:!grid-cols-3 lg:!grid-cols-4 gap-3 sm:!gap-6 md:!gap-2">
         {products.map((product, idx) => (
           <div
             key={idx}
@@ -44,7 +43,7 @@ const DashboardProductSection = () => {
               from the user’s website.
             </p>
 
-            <button className="relative overflow-hidden bg-transparent border border-[#8267EC] px-2 sm!px-5 py-2 mt-auto rounded-full flex items-center gap-2 font-inter font-semibold text-[16px] text-[#8267EC] cursor-pointer hover:!text-white group transition-colors duration-300">
+            <button className="relative overflow-hidden bg-transparent border border-[#8267EC] px-4 sm!px-7 py-2 mt-auto rounded-full flex items-center gap-2 font-inter font-normal text-[16px] text-[#FFFFFFCC] cursor-pointer hover:!text-white group transition-colors duration-300">
               <span className="absolute inset-0 bg-purple-700 scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
               <img
                 src="/dashboardstar.svg"
