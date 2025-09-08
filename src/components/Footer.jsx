@@ -62,31 +62,41 @@ const Footer = () => {
           <h4 className="font-inter text-center md:!text-start text-xl lg:text-2xl mb-3">
             Subscribe our newsletter
           </h4>
-          <div
+<div
   className="
-    flex flex-row items-center 
-    w-full md:w-fit 
+    flex flex-col sm:flex-row items-center 
+    w-full 
     bg-[#F5F6F9] rounded-[64px] border border-[#D8D8DB] 
-    gap-3 md:gap-[11.35px] px-3 lg:px-5 py-3
+    gap-3 sm:gap-[11.35px] px-4 lg:px-6 py-3
   "
 >
   <input
     type="email"
     placeholder="Your email address"
-    className="flex-1 min-w-0 bg-transparent text-sm outline-none px-2 py-2"
+    className="
+      flex-1 min-w-0 
+      bg-transparent text-sm 
+      outline-none px-3 py-2 
+      w-full
+    "
   />
   <button
     className="
       bg-gradient-to-t from-[#7050F0] to-[#9680EF] hover:opacity-90 
-      text-white text-sm 
+      text-white text-sm font-medium
       rounded-full cursor-pointer 
-      px-6 py-3 
+      !px-5 !py-2 
+      w-[80%] sm:w-auto
+      self-center sm:self-auto
       shrink-0
     "
   >
     Subscribe
   </button>
 </div>
+
+
+
 
         </div>
       </div>
