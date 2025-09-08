@@ -3,8 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import { EffectCoverflow } from "swiper";
-import { FreeMode, Mousewheel } from "swiper";
-
+import { FreeMode, Mousewheel, Autoplay } from "swiper";
+import "swiper/css/autoplay";
 const reviews = [
   {
     name: "Elena W.",
@@ -68,14 +68,16 @@ const ReviewsSection = () => {
           <Swiper
             direction="vertical"
             slidesPerView={2.2}
-            centeredSlides
             loop
             spaceBetween={30}
-            speed={1000} 
-            freeMode={true} 
-            freeModeMomentum={true}
-            freeModeMomentumRatio={1.5}
-            modules={[FreeMode, Mousewheel]} 
+            speed={2000}
+            mousewheel={true}
+            autoplay={{
+              delay: 0,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: false,
+            }}
+            modules={[Mousewheel, Autoplay]}
             breakpoints={{
               640: {
                 spaceBetween: 30,
