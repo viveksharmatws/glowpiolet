@@ -60,18 +60,17 @@ const FeaturesSection = () => {
                 </div>
 
                 <div className="w-full col-span-2 sm:!col-span-1">
-                <div className="px-2">
-
-                  <h3 className="!text-2xl lg:!text-4xl text-center sm:!text-start leading-[38px] md:leading-[48px] max-w-[445px] font-semibold font-inter text-transparent bg-clip-text bg-gradient-to-b from-black to-black/70 tracking-[-1.5px]">
-                    Transform Your Website into Ad Gold
-                  </h3>
-                  <p className="text-lg text-gray-700 mt-4 max-w-[617px] mb-10 text-center sm:!text-start">
-                    Seamlessly connect your brand's website. Our intelligent AI
-                    identifies key content and Products and generates compelling
-                    ad markers, turning existing assets into powerful
-                    advertisements.
-                  </p>
-                </div>
+                  <div className="px-2">
+                    <h3 className="!text-2xl lg:!text-4xl text-center sm:!text-start leading-[38px] md:leading-[48px] max-w-[445px] font-semibold font-inter text-transparent bg-clip-text bg-gradient-to-b from-black to-black/70 tracking-[-1.5px]">
+                      Transform Your Website into Ad Gold
+                    </h3>
+                    <p className="text-lg text-gray-700 mt-4 max-w-[617px] mb-10 text-center sm:!text-start">
+                      Seamlessly connect your brand's website. Our intelligent
+                      AI identifies key content and Products and generates
+                      compelling ad markers, turning existing assets into
+                      powerful advertisements.
+                    </p>
+                  </div>
                   <div>
                     <img
                       src="/website-top.png"
@@ -115,10 +114,10 @@ const FeaturesSection = () => {
                     Create Custom UGC Characters for Authentic Ads
                   </h3>
                   <p className="text-lg text-gray-700 mt-4 max-w-[617px] mb-10 text-center sm:!text-start">
-                    Our advanced AI ensures every ad showcases perfect skin,
-                    with automatic skin tone matching, blemish removal, a
-                    natural glow, and impressive before-and-after
-                    transformations.
+                    Build unique characters with customizable names, ages,
+                    photos, skin tones, and voices. Our AI perfectly replicates
+                    these characters in video ads, creating authentic UGC
+                    content.
                   </p>
                   <div>
                     <img
@@ -129,7 +128,6 @@ const FeaturesSection = () => {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </section>

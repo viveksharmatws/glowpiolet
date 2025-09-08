@@ -44,7 +44,7 @@ const TemplatesProductSection = () => {
     <section>
       {/* Section Header */}
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-[14px] sm:!text-[16px] leading-[16px] tracking-[0.02em] text-center text-white/70 font-medium font-inter">
+        <h2 className="text-[14px] sm:!text-[16px] leading-[16px] tracking-[0.02em] text-start text-white/70 font-medium font-inter">
           Start With A Template
         </h2>
 
@@ -57,19 +57,21 @@ const TemplatesProductSection = () => {
         </a>
       </div>
 
+      <div className="border w-full border-[#FFFFFF1F] mb-2"></div>
+
       {/* Templates Grid */}
       <div className="grid grid-cols-2 sm:!grid-cols-2 lg:!grid-cols-4 gap-3 sm:!gap-6">
         {templates.map((template, idx) => (
           <div
             key={idx}
-            className="bg-[#202328] p-0 sm:!p-4 rounded-lg flex flex-col items-start hover:shadow-lg transition cursor-pointer"
+            className="bg-[#202328] p-0 sm:!p-4 sm:!px-0 rounded-lg flex flex-col items-start  cursor-pointer"
           >
             {/* Image Section */}
-            <div className="relative w-full h-[137px] sm:!h-[180px] lg:!h-[200px] mb-3">
+            <div className="relative w-full max-w-[192px] h-[137px] sm:!h-[180px] lg:!h-[200px] mb-3">
               <img
                 src={template.img}
                 alt={template.name}
-                className="w-full h-full object-cover rounded-xl"
+                className=" h-full object-cover rounded-xl w-[192px]"
               />
 
               {/* Play Button */}
@@ -101,7 +103,8 @@ const TemplatesProductSection = () => {
             <h2 className="text-white text-base sm:!text-xl text-start mb-2 font-inter">
               {template.name}
             </h2>
-            <p className="text-[#FFFFFFB2] text-sm sm:!text-base text-start mb-2 font-inter">
+
+            <p className="text-[#FFFFFFB2] text-sm text-start mb-2 font-inter">
               {template.description}
             </p>
 

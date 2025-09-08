@@ -58,67 +58,60 @@ const Footer = () => {
         </div>
 
         {/* 4️⃣ Newsletter */}
-        <div className="col-span-5 md:!col-span-1 mt-6 sm:mt-0">
-          <h4 className="font-inter text-center md:!text-start text-xl lg:text-2xl mb-3">
-            Subscribe our newsletter
-          </h4>
-<div
-  className="
-    flex flex-col sm:flex-row items-center 
-    w-full 
-    bg-[#F5F6F9] rounded-[64px] border border-[#D8D8DB] 
-    gap-3 sm:gap-[11.35px] px-4 lg:px-6 py-3
-  "
->
-  <input
-    type="email"
-    placeholder="Your email address"
+       <div className="col-span-5 md:!col-span-1 mt-6 sm:mt-0">
+  <h4 className="font-inter text-center md:text-start text-xl lg:text-2xl mb-3">
+    Subscribe our newsletter
+  </h4>
+  <div
     className="
-      flex-1 min-w-0 
-      bg-transparent text-sm 
-      outline-none px-3 py-2 
-      w-full
-    "
-  />
-  <button
-    className="
-      bg-gradient-to-t from-[#7050F0] to-[#9680EF] hover:opacity-90 
-      text-white text-sm font-medium
-      rounded-full cursor-pointer 
-      !px-5 !py-2 
-      w-[80%] sm:w-auto
-      self-center sm:self-auto
-      shrink-0
+      flex flex-row items-center 
+      w-full 
+      bg-[#F5F6F9] rounded-[64px] border border-[#D8D8DB] 
+      gap-3 sm:gap-[11.35px] px-4 lg:px-6 py-3
     "
   >
-    Subscribe
-  </button>
+    <input
+      type="email"
+      placeholder="Your email address"
+      className="
+        flex-1 min-w-0 
+        bg-transparent text-sm 
+        outline-none px-3 py-2 
+        w-full
+      "
+    />
+    <button
+      className="
+        bg-gradient-to-t from-[#7050F0] to-[#9680EF] hover:opacity-90 
+        text-white text-sm font-medium
+        rounded-full cursor-pointer 
+        px-5 py-2 
+        shrink-0
+      "
+    >
+      Subscribe
+    </button>
+  </div>
 </div>
 
-
-
-
-        </div>
       </div>
 
       {/* Bottom Links */}
-<div className="max-w-7xl mx-auto px-4 mt-6 flex flex-col items-center text-center sm:!flex-row sm:!items-center sm:!justify-between gap-4 text-sm text-gray-500">
-  <div>
-    <a href="#" className="font-inter text-base text-black">
-      © 2025. All rights reserved.
-    </a>
-  </div>
-  <div className="gap-2 flex">
-    <a href="#" className="font-inter text-sm sm:!text-base text-black">
-      Privacy Policy
-    </a>
-    <a href="#" className="font-inter text-sm sm:!text-base text-black">
-      Terms of Service
-    </a>
-  </div>
-</div>
-
-
+      <div className="max-w-7xl mx-auto px-4 mt-6 flex flex-col items-center text-center sm:!flex-row sm:!items-center sm:!justify-between gap-4 text-sm text-gray-500">
+        <div>
+          <a href="#" className="font-inter text-base text-black">
+            © 2025. All rights reserved.
+          </a>
+        </div>
+        <div className="gap-2 flex">
+          <a href="#" className="font-inter text-sm sm:!text-base text-black">
+            Privacy Policy
+          </a>
+          <a href="#" className="font-inter text-sm sm:!text-base text-black">
+            Terms of Service
+          </a>
+        </div>
+      </div>
     </footer>
   );
 };

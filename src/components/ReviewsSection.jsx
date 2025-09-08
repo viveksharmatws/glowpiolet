@@ -46,8 +46,8 @@ const ReviewsSection = () => {
           </div>
           <div className="text-2xl sm:text-3xl font-semibold bg-gradient-to-b from-black to-black/70 bg-clip-text text-transparent mt-6 sm:mt-8 text-center sm:!text-left mb-16">
             2K+ <br />
-            <span className="text-sm sm:text-base text-black/60">
-              active users
+            <span className="text-sm sm:text-lg text-[#909090] font-normal">
+              Trusted by users
             </span>
           </div>
         </div>

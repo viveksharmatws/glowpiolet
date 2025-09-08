@@ -26,81 +26,77 @@ const TrialTimeline = () => {
         </div>
       </div>
 
-      <div className="relative flex justify-between items-start main-wrapper mx-auto px-2 lg:px-4">
-        {/* Connecting line only between icons */}
-        <div
-          className="absolute top-[25px] left-[14.66%] right-[14.66%] h-0 z-0"
-          style={{
-            borderTop: "1px solid",
-            borderImageSource:
-              "linear-gradient(90deg, #48C8FF 0%, #893EF3 100%)",
-            borderImageSlice: 1,
-          }}
-        ></div>
+  <div className="relative flex flex-col sm:flex-row sm:justify-between items-start main-wrapper mx-auto px-4 sm:px-4 gap-8 sm:gap-0">
+  <div
+    className="absolute top-[25px] left-0 right-0 hidden sm:block z-0"
+    style={{
+      borderTop: "1px solid",
+      borderImageSource: "linear-gradient(90deg, #48C8FF 0%, #893EF3 100%)",
+      borderImageSlice: 1,
+    }}
+  ></div>
 
-        {/* Step 1 */}
-        <div className="relative z-10 flex flex-col items-center text-center max-w-xs">
-          <div
-            className="w-12 h-12 flex items-center justify-center rounded-full backdrop-blur-[20px]"
-            style={{
-              borderImageSource:
-                "linear-gradient(137.12deg, rgba(216, 216, 216, 0.025) -0.08%, rgba(72, 200, 255, 0.2) 98.5%)",
-              borderImageSlice: 1,
-              boxShadow:
-                "8px 4px 16px rgba(0, 0, 0, 0.08), 0px 0px 8px rgba(13, 238, 252, 0.32) inset",
-              background: "rgba(255,255,255,0.1)",
-            }}
-          >
-            <img src="/lock.png" alt="Lock Icon" className=" h-6" />
-          </div>
-          <h3 className="mt-4 font-bold font-inter !text-3xl lg:text-xl">Today</h3>
-          <p className="text-gray-600 font-inter text-sm lg:text-base mt-2 max-w-[363px]">
-            Unlock the full suite of AI tools and create your first winning ad in minutes.
-          </p>
-        </div>
+  <div className="relative z-10 flex flex-col items-center text-center sm:max-w-xs w-full">
+    <div
+      className="w-12 h-12 flex items-center justify-center rounded-full backdrop-blur-[20px]"
+      style={{
+        borderImageSource:
+          "linear-gradient(137.12deg, rgba(216, 216, 216, 0.025) -0.08%, rgba(72, 200, 255, 0.2) 98.5%)",
+        borderImageSlice: 1,
+        boxShadow:
+          "8px 4px 16px rgba(0, 0, 0, 0.08), 0px 0px 8px rgba(13, 238, 252, 0.32) inset",
+        background: "rgba(255,255,255,0.1)",
+      }}
+    >
+      <img src="/lock.png" alt="Lock Icon" className="h-6" />
+    </div>
+    <h3 className="mt-4 font-bold font-inter text-2xl sm:!text-3xl">Today</h3>
+    <p className="text-gray-600 font-inter text-sm sm:text-base mt-2 px-2 sm:px-0">
+      Unlock the full suite of AI tools and create your first winning ad in minutes.
+    </p>
+  </div>
 
-        {/* Step 2 */}
-        <div className="relative z-10 flex flex-col items-center text-center max-w-xs">
-          <div
-            className="w-12 h-12 flex items-center justify-center rounded-full backdrop-blur-[20px]"
-            style={{
-              borderImageSource:
-                "linear-gradient(137.12deg, rgba(216, 216, 216, 0.025) -0.08%, rgba(72, 200, 255, 0.2) 98.5%)",
-              borderImageSlice: 1,
-              boxShadow:
-                "8px 4px 16px rgba(0, 0, 0, 0.08), 0px 0px 8px rgba(13, 238, 252, 0.32) inset",
-              background: "rgba(255,255,255,0.1)",
-            }}
-          >
-            <img src="/bellicon.png" alt="Bell Icon" className="h-6" />
-          </div>
-          <h3 className="mt-4 font-bold font-inter !text-3xl lg:text-xl">Day 7</h3>
-          <p className="text-gray-600 font-inter px-1 lg:px-0 text-sm lg:text-base mt-2 max-w-[363px]">
-            We’ll send a friendly reminder so you stay in control. No surprises.
-          </p>
-        </div>
+  <div className="relative z-10 flex flex-col items-center text-center sm:max-w-xs w-full">
+    <div
+      className="w-12 h-12 flex items-center justify-center rounded-full backdrop-blur-[20px]"
+      style={{
+        borderImageSource:
+          "linear-gradient(137.12deg, rgba(216, 216, 216, 0.025) -0.08%, rgba(72, 200, 255, 0.2) 98.5%)",
+        borderImageSlice: 1,
+        boxShadow:
+          "8px 4px 16px rgba(0, 0, 0, 0.08), 0px 0px 8px rgba(13, 238, 252, 0.32) inset",
+        background: "rgba(255,255,255,0.1)",
+      }}
+    >
+      <img src="/bellicon.png" alt="Bell Icon" className="h-6" />
+    </div>
+    <h3 className="mt-4 font-bold font-inter text-2xl sm:!text-3xl">Day 7</h3>
+    <p className="text-gray-600 font-inter text-sm sm:text-base mt-2 px-2 sm:px-0">
+      We’ll send a friendly reminder so you stay in control. No surprises.
+    </p>
+  </div>
 
-        {/* Step 3 */}
-        <div className="relative z-10 flex flex-col items-center text-center max-w-xs">
-          <div
-            className="w-12 h-12 flex items-center justify-center rounded-full backdrop-blur-[20px]"
-            style={{
-              borderImageSource:
-                "linear-gradient(137.12deg, rgba(216, 216, 216, 0.025) -0.08%, rgba(72, 200, 255, 0.2) 98.5%)",
-              borderImageSlice: 1,
-              boxShadow:
-                "8px 4px 16px rgba(0, 0, 0, 0.08), 0px 0px 8px rgba(13, 238, 252, 0.32) inset",
-              background: "rgba(255,255,255,0.1)",
-            }}
-          >
-            <img src="/staricon.png" alt="Star Icon" className=" h-6" />
-          </div>
-          <h3 className="mt-4 font-bold font-inter !text-3xl lg:text-xl">Day 14</h3>
-          <p className="text-gray-600 font-inter text-sm lg:text-base mt-2 max-w-[363px]">
-            Your trial ends. Choose a plan to keep growing, or cancel with a single click.
-          </p>
-        </div>
-      </div>
+  <div className="relative z-10 flex flex-col items-center text-center sm:max-w-xs w-full">
+    <div
+      className="w-12 h-12 flex items-center justify-center rounded-full backdrop-blur-[20px]"
+      style={{
+        borderImageSource:
+          "linear-gradient(137.12deg, rgba(216, 216, 216, 0.025) -0.08%, rgba(72, 200, 255, 0.2) 98.5%)",
+        borderImageSlice: 1,
+        boxShadow:
+          "8px 4px 16px rgba(0, 0, 0, 0.08), 0px 0px 8px rgba(13, 238, 252, 0.32) inset",
+        background: "rgba(255,255,255,0.1)",
+      }}
+    >
+      <img src="/staricon.png" alt="Star Icon" className="h-6" />
+    </div>
+    <h3 className="mt-4 font-bold font-inter text-2xl sm:!text-3xl">Day 14</h3>
+    <p className="text-gray-600 font-inter text-sm sm:text-base mt-2 px-2 sm:px-0">
+      Your trial ends. Choose a plan to keep growing, or cancel with a single click.
+    </p>
+  </div>
+</div>
+
       <PricingSection />
     </div>
   );

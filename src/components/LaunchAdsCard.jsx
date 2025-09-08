@@ -45,7 +45,7 @@ const LaunchAdsCard = ({ heading, description, imageSrc }) => {
       </div>
 
 {/* Image Section */}
-<div className="flex-[1] flex justify-center sm:justify-end items-center flex-shrink-0">
+<div className="flex-[1] flex justify-center sm:justify-center items-center flex-shrink-0">
   <img
     src={imageSrc}
     alt="Illustration"

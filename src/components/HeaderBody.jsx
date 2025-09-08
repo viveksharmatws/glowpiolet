@@ -73,7 +73,7 @@ const HeaderBody = () => {
             </div>
           </div>
 
-          <div className="mt-8 mb-52">
+          <div className="mt-[60px] md:!mt-[90px] mb-52">
             <p className="font-inter font-normal text-[20px] leading-[29.66px] text-white/40 cursor-pointer">
               History
             </p>
