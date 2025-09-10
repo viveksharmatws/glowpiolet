@@ -60,7 +60,7 @@ const TemplatesProductSection = () => {
       <div className="border w-full border-[#FFFFFF1F] mb-2"></div>
 
       {/* Templates Grid */}
-      <div className="grid grid-cols-2 sm:!grid-cols-2 lg:!grid-cols-4 gap-3 sm:!gap-6">
+      <div className="grid grid-cols-2 sm:!grid-cols-2 lg:!grid-cols-4 gap-3 sm:!gap-5">
         {templates.map((template, idx) => (
           <div
             key={idx}

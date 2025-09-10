@@ -12,7 +12,7 @@ const HeaderBody = () => {
 
       <div className="flex min-h-screen bg-[#202328] text-white sm:!p-4 lg:!p-7">
         <aside
-          className={`fixed md:static top-0 left-0 h-full w-64 p-3 lg:!p-6 border-r border-gray-800 bg-[#060B13] rounded-2xl flex flex-col justify-between transform transition-transform duration-300 z-50
+          className={`fixed md:static top-0 left-0 h-full w-60 p-3 lg:!p-6 border-r border-gray-800 bg-[#060B13] rounded-2xl flex flex-col justify-between transform transition-transform duration-300 z-50
           ${sidebarOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}
         >
           <div className="md:hidden flex justify-end mb-4">
@@ -50,21 +50,21 @@ const HeaderBody = () => {
                 </button>
               </Link>
 
-              <Link to="/dashboard" className="hover:bg-gray-800 rounded">
+              <Link to="/dashboard/templates" className="hover:bg-gray-800 rounded">
                 <button className="text-left px-2 py-2 font-inter text-[#FFFFFFCC] flex gap-4 items-center cursor-pointer">
                   <img src="/template.svg" alt="Template" className="h-7 w-7" />
                   Template
                 </button>
               </Link>
 
-              <Link to="/dashboard" className="hover:bg-gray-800 rounded">
+              <Link to="/dashboard/voicecloning" className="hover:bg-gray-800 rounded">
                 <button className="text-left px-2 py-2  font-inter text-[#FFFFFFCC] flex gap-4 items-center cursor-pointer">
                   <img src="/voicecloning.svg" alt="Voice Cloning" className="h-7 w-7" />
                   Voice Cloning
                 </button>
               </Link>
 
-              <Link to="/dashboard" className="hover:bg-gray-800 rounded">
+              <Link to="/dashboard/downloads" className="hover:bg-gray-800 rounded">
                 <button className="text-left px-2 py-2 font-inter text-[#FFFFFFCC] flex gap-4 items-center cursor-pointer">
                   <img src="/download.svg" alt="Downloads" className="h-7 w-7" />
                   Downloads
