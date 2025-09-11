@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Templates = () => {
+  const [selectedTab, setSelectedTab] = useState("All");
   const templates = [
     {
       name: "Product Demo",
@@ -45,15 +46,28 @@ const Templates = () => {
       <h2 className="text-xl sm:!text-2xl font-inter font-semibold text-start text-white mb-[15px] md:!mb-[24px]">
         Start With A template
       </h2>
-      <div className="flex gap-4">
-        <div class="bg-[#893EF3] text-white rounded-full px-8 py-2 opacity-100 font-light flex items-center gap-2 font-inter">
+      <div className="flex gap-4 mb-[24px]">
+        <button
+          className={` rounded-full px-8 py-2 font-light flex items-center gap-2 font-inter ${
+            selectedTab === "All" ? "bg-[#893EF3] text-white" : "bg-white text-black"
+          }`}
+          onClick={() => setSelectedTab("All")}
+        >
           All
-        </div>
-        <button className="font-inter text-base font-light">Saved</button>
+        </button>
+
+        <button
+          className={` rounded-full px-8 py-2 font-light flex items-center gap-2 font-inter ${
+            selectedTab === "Saved" ? "bg-[#893EF3] text-white" : "bg-white text-black"
+          }`}
+          onClick={() => setSelectedTab("Saved")}
+        >
+          Saved
+        </button>
       </div>
 
       {/* Templates Grid */}
-      <div className="grid grid-cols-2 sm:!grid-cols-2 lg:!grid-cols-4 gap-3 sm:!gap-5">
+      <div className="grid grid-cols-2 sm:!grid-cols-2 lg:!grid-cols-4 gap-3 sm:!gap-5 mb-4">
         {templates.map((template, idx) => (
           <div
             key={idx}
@@ -102,24 +116,23 @@ const Templates = () => {
             </p>
 
             <div className="flex justify-between items-center w-full">
-            <div className="flex gap-3 items-center">
-            <img src="/favourite.svg" className="h-5 w-5" />
-            <p className="font-inter font-semibold text-sm md:!text-base text-white">
-                Save
-            </p>
+              <div className="flex gap-3 items-center">
+                <img src="/favourite.svg" className="h-5 w-5" />
+                <p className="font-inter font-semibold text-sm md:!text-base text-white">
+                  Save
+                </p>
+              </div>
+              {/* Try Button */}
+              <button className="bg-[#F33EE7] hover:bg-[#da62d2] px-4 py-2 sm:px-5 sm:py-2 mt-auto rounded-md flex items-center gap-2 font-inter font-semibold text-sm sm:!text-[16px] text-white cursor-pointer transition-colors duration-300">
+                Try
+              </button>
             </div>
-            {/* Try Button */}
-            <button className="bg-[#F33EE7] hover:bg-[#da62d2] px-4 py-2 sm:px-5 sm:py-2 mt-auto rounded-md flex items-center gap-2 font-inter font-semibold text-sm sm:!text-[16px] text-white cursor-pointer transition-colors duration-300">
-              Try
-            </button>
-            </div>
-
           </div>
         ))}
       </div>
 
-            {/* Templates Grid */}
-      <div className="grid grid-cols-2 sm:!grid-cols-2 lg:!grid-cols-4 gap-3 sm:!gap-5">
+      {/* Templates Grid */}
+      { selectedTab === "All" && <div className="grid grid-cols-2 sm:!grid-cols-2 lg:!grid-cols-4 gap-3 sm:!gap-5">
         {templates.map((template, idx) => (
           <div
             key={idx}
@@ -168,21 +181,20 @@ const Templates = () => {
             </p>
 
             <div className="flex justify-between items-center w-full">
-            <div className="flex gap-3 items-center">
-            <img src="/favourite.svg" className="h-5 w-5" />
-            <p className="font-inter font-semibold text-base text-white">
-                Save
-            </p>
+              <div className="flex gap-3 items-center">
+                <img src="/favourite.svg" className="h-5 w-5" />
+                <p className="font-inter font-semibold text-base text-white">
+                  Save
+                </p>
+              </div>
+              {/* Try Button */}
+              <button className="bg-[#F33EE7] hover:bg-[#da62d2] px-4 py-2 sm:px-5 sm:py-2 mt-auto rounded-md flex items-center gap-2 font-inter font-semibold text-[15px] sm:text-[16px] text-white cursor-pointer transition-colors duration-300">
+                Try
+              </button>
             </div>
-            {/* Try Button */}
-            <button className="bg-[#F33EE7] hover:bg-[#da62d2] px-4 py-2 sm:px-5 sm:py-2 mt-auto rounded-md flex items-center gap-2 font-inter font-semibold text-[15px] sm:text-[16px] text-white cursor-pointer transition-colors duration-300">
-              Try
-            </button>
-            </div>
-
           </div>
         ))}
-      </div>
+      </div>}
     </section>
   );
 };

@@ -53,7 +53,7 @@ const VoiceCloning = () => {
           <h2 className="text-lg sm:text-xl font-inter font-light text-white mb-4 ">
             My Voice
           </h2>
-          <div className="space-y-4">
+          <div className="space-y-7">
             {voices.map((voice, index) => (
               <div
                 key={index}
